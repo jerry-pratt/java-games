@@ -165,7 +165,7 @@ public class TDGammonNeuralNetworkTest
 			inputVector[0] = x;
 			network.updateNeuralNetwork(inputVector, y);
 			
-//			network.printWeights();
+//			network.printWeightsAndBiases();
 		}
 		
 		
@@ -210,7 +210,7 @@ public class TDGammonNeuralNetworkTest
 
 			network.updateNeuralNetwork(inputVector, quadraticFunctionToLearn(x, y));
 
-			//			network.printWeights();
+			//			network.printWeightsAndBiases();
 		}
 
 
@@ -232,7 +232,7 @@ public class TDGammonNeuralNetworkTest
 		
 		if (!expectedEqualsOutput)
       {
-         network.printWeights();
+         network.printWeightsAndBiases();
          fail("Didn't match expected!");
       }
 	}
@@ -263,7 +263,7 @@ public class TDGammonNeuralNetworkTest
 
          network.updateNeuralNetwork(binaryDigits, binaryFunctionToLearn(binaryDigits));
 
-         //       network.printWeights();
+         //       network.printWeightsAndBiases();
       }
 
       int numberOfTests = 100;
@@ -283,7 +283,7 @@ public class TDGammonNeuralNetworkTest
 
       if (!expectedEqualsOutput)
       {
-         network.printWeights();
+         network.printWeightsAndBiases();
          fail("Didn't match expected!");
       }
    }
@@ -358,7 +358,7 @@ public class TDGammonNeuralNetworkTest
 
 			network.updateNeuralNetwork(inputVector, linearFunctionToLearn(x, y));
 
-			//			network.printWeights();
+			//			network.printWeightsAndBiases();
 		}
 
 

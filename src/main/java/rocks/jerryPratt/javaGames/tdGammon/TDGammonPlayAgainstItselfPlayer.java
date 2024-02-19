@@ -192,7 +192,7 @@ public class TDGammonPlayAgainstItselfPlayer implements BackgammonPlayer
 				double whiteWinPercentageOnStartingBoard = bothSidesPlayer.computeEstimatedChanceOfWhiteWinning(startingBoard);
 				double whiteWinPercentageOnObviousWhiteWin = bothSidesPlayer.computeEstimatedChanceOfWhiteWinning(clearlyWhiteWinBoard);
 				
-				bothSidesPlayer.getNeuralNetwork().printWeights();
+				bothSidesPlayer.getNeuralNetwork().printWeightsAndBiases();
 
 				System.out.println("Winner: " + winner);
 				System.out.println("White Percentage on starting board = " + whiteWinPercentageOnStartingBoard);

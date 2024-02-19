@@ -424,7 +424,7 @@ public class TDGammonNeuralNetwork
 		return 1.0 / (1.0 + Math.exp(-input));
 	}
 
-	public void printWeights() 
+	public void printWeightsAndBiases() 
 	{
 		System.out.println("\ndouble[][] firstLayerWeights = new double[][]{");
 
